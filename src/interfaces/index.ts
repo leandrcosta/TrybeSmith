@@ -1,6 +1,13 @@
 export interface IProduct {
-  id?: number
+  id?: number;
   name: string;
   amount: string;
-  orderId?:number;
+  orderId?: number;
+}
+export interface IUser {
+  id?: number;
+  username: string;
+  vocation: string;
+  level: number;
+  password?: string;
 }
