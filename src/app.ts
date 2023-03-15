@@ -1,7 +1,9 @@
 import express from 'express';
-// Iniciando projeto TrybeSmith -  utilizando typescript e sem sequelize
+import productRoutes from './routes/product.routes';
+
 const app = express();
 
 app.use(express.json());
+app.use('/products', productRoutes); // router create new product
 
 export default app;
